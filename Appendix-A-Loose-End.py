@@ -20,7 +20,4 @@ def safe_division(a, b):
         ZeroDivisionError
 
 # More dummy changes 
-
-
-
-
+# You could still do the following
