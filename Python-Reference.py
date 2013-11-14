@@ -71,3 +71,14 @@ except ZeroDivisionError:
     print "Can't divide anything by zero."
 finally:
     print "DOne trying to calculate 1/0"
+
+# The with statement
+# The with statement is used to wrap a block of code using a so-called
+# context manager, allowing the context manager to perform some setup
+# and cleanup actions.
+with open("somefile.txt") as myfile:
+    dosomething(myfile)
+# The file will have been closed here
+
+# Class definitions
+# VIP. Class definitions are used to creat
