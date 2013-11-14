@@ -58,4 +58,16 @@ print x
 # The for statement
 # The for statement is used for repeated execution over the elements
 # of sequences or other iterable objects.
+for i in range(10, 0, -1):
+    print i
+print 'Ignition!'
 
+# The try statement
+# The try statement is used to enclose pieces of code where one or
+# more known exceptions may occur.
+try:
+    1/0
+except ZeroDivisionError:
+    print "Can't divide anything by zero."
+finally:
+    print "DOne trying to calculate 1/0"
