@@ -27,3 +27,8 @@ del seq[42]  # delete a sequence item
 del seq[42:]  # delete a sequence slice  
 del map['foo']  # delete a mapping item
 
+# The print statement
+print 'Hello, World!'
+print 1, 2, 3
+print >> somefile, 'xyz'
+print 42,  # Writes '42' to sys.stdout
