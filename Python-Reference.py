@@ -81,4 +81,4 @@ with open("somefile.txt") as myfile:
 # The file will have been closed here
 
 # Class definitions
-# VIP. Class definitions are used to creat
+# VIP. Class definitions are used to create class objects and to 
