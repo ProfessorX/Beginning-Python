@@ -32,3 +32,30 @@ print 'Hello, World!'
 print 1, 2, 3
 print >> somefile, 'xyz'
 print 42,  # Writes '42' to sys.stdout
+
+
+
+### Something terrible happened when I took practice with this git
+### mode... And it turned out that I will omit some stuff...
+
+# COmpound statement
+
+# the if statement
+# always remember to backup. Or you shall lose your face!!!
+if x < 10:
+    print 'Less than ten'
+elif 10 <= x < 20:
+    print 'Less than twenty'
+else:
+    print 'twenty or more'
+
+# The while statement
+x = 1
+while x < 200:
+    x *= 2  
+print x
+
+# The for statement
+# The for statement is used for repeated execution over the elements
+# of sequences or other iterable objects.
+
