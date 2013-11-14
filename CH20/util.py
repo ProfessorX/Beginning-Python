@@ -11,3 +11,5 @@ def blocks(file):
         elif block:
             yield ''.join(blocks).strip()
             block = []
+
+# Some dummy test cases
