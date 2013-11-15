@@ -1,0 +1,13 @@
+;; Object Instant Markup
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "Instant Markup"
+  :file "Project.ede"
+  :name "Instant Markup"
+  :targets (list 
+   (ede-proj-target-makefile-program "rules.py"
+    :name "rules.py"
+    :path ""
+    )
+   )
+  :makefile-type 'Makefile.am
+  )
