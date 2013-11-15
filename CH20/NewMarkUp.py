@@ -1,4 +1,5 @@
-import sys, re
+import sys
+import re
 from handlers import *
 from util import *
 from rules import *

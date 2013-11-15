@@ -1,5 +1,7 @@
 # 20131115 Lab 16:30
 # The Handleers
+
+
 class Handler:
     """
     An object that handles method calls from the Parser.
@@ -15,19 +17,21 @@ class Handler:
         method = getattr(self, prefix+name, None)
         if callable(method):
             return method(*args)
+
     def start(self, name):
         self.callback('start_', name)
+
     def end(self, name):
         self.callback('end_',name)
+
     def sub(self, name):
         def substitution(match):
-            """
-            """
-            result = self.callback('sub,' name, match)
-            if result is None:
-                match.group(0)
+            
+            result = self.callback('sub_', name, match)
+            if result is None: match.group(0)
             return result
         return substitution
+
 
 class HTMLRenderer(Handler):
     """
@@ -74,7 +78,7 @@ class HTMLRenderer(Handler):
     def end_title(self):
         print '</h1>'
 
-    def sub_emphasis(self):
+    def sub_emphasis(self, match):
         return '<em>%s</em>' % match.group(1)
 
     def sub_url(self, match):
