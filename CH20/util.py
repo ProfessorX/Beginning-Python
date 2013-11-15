@@ -1,6 +1,7 @@
 # A Text Block Generator 
 def lines(file):
-    for line in file: yield line
+    for line in file:
+        yield line
     yield '\n'
 
 def blocks(file):
@@ -9,7 +10,7 @@ def blocks(file):
         if line.strip():
             block.append(line)
         elif block:
-            yield ''.join(blocks).strip()
+            yield ''.join(block).strip()
             block = []
 
 # Some dummy test cases
