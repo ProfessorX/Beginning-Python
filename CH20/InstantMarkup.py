@@ -29,6 +29,8 @@ class Parser:
                     if last: break
         self.handler.end('document')
 
+
+
 class BasicTextParser(Parser):
     """
     A specific Parser that adds rules and filters in its
@@ -46,7 +48,12 @@ class BasicTextParser(Parser):
         self.addFilter(r'(http://[\.a-zA-Z/]+)', 'url')
         self.addFilter(r'([\.a-zA-Z]+@[\.a-zA-Z]+[a-zA-Z]+)', 'mail')
 
+
+
 handler = HTMLRenderer()
 parser = BasicTextParser(handler)
 
 parser.parse(sys.stdin)
+
+parser.addFilter
+
