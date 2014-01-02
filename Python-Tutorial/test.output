@@ -1,0 +1,4 @@
+  File "<stdin>", line 1
+    3 little
+           ^
+SyntaxError: invalid syntax
